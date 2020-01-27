@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="1X"
+            android:textColor="#7fa500"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/product_name_takeoutCheckoutAdp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Almond_beet"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="$7.75"
+            android:id="@+id/product_price_takeoutCheckoutAdpt"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

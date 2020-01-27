@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:id="@+id/price_getCartScreen_takeout_Menu"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/null_tv"
+            android:textColor="@color/colorLightWhite"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_item_txt_takeout_Menu"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textSize="19dp"
+                android:textColor="@color/colorLightWhite"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:id="@+id/null_tv"
+            android:layout_centerInParent="true"/>
+
+
+
+          <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$25.5"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/rel_item_txt"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorLightWhite"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/arrow_rel_cart"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:src="@drawable/next_arrow_white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

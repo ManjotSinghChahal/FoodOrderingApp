@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textAlignment="center"
+            android:id="@+id/tool_profile"
+            android:text="Delivery Location"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@color/color_toolbar"
+            />
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:id="@+id/rel_img_back_loc">
+
+            <ImageView
+                android:id="@+id/img_bcakArrow"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rel_layout_done">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/done"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#efeded"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/delivery_loc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/search"
+            android:hint=" Enter Delivery Address"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.Delivery_Location"
+       >
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+   <RelativeLayout
+    android:id="@+id/listView_rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Address"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/colorOrange"
+        android:textSize="22dp"
+        android:gravity="center_vertical" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#c9c5c4"
+        android:dividerHeight="4px"
+        android:background="#ffffff"
+        android:layout_below="@+id/address"
+        android:id="@+id/listview_delivery">
+
+    </ListView>
+</RelativeLayout>
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
+
+</LinearLayout>

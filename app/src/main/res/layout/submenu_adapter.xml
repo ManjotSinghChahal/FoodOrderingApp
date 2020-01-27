@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_id_value_submenu">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/rel_layout_click"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:id="@+id/cart_image_submenu_iv"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+               android:background="@drawable/menu_img_food"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamburger"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/txt_burger"
+                android:layout_toRightOf="@+id/cart_image_submenu_iv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cart_image_submenu_iv"
+                android:textSize="12dp"
+                android:text="Lorem ipsum dolor"
+                android:id="@+id/description"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/txt_burger"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_icon_1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+           android:background="@drawable/icon_dark"
+            android:layout_alignParentRight="true"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_buttons"
+            android:layout_below="@+id/img_icon_1">
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rel_img_add_icon">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_add_icon"
+          android:background="@drawable/plus_qty"          />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/txt_txt_view"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toLeftOf="@+id/rel_img_add_icon"
+            android:layout_alignBottom="@+id/rel_img_add_icon">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:id="@+id/txt_view11"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/colorLightBlack"
+            android:text="1"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:id="@+id/rel_img_less_icon"
+            android:layout_alignBottom="@+id/rel_img_add_icon"
+            android:layout_toLeftOf="@+id/txt_txt_view">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_less_icon"
+          android:background="@drawable/minus_qty"
+             />
+        </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dollar11"
+            android:layout_below="@+id/rel_buttons"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="$2.50"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

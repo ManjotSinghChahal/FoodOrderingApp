@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.food_ordering_app.fragment.Home">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#F0EFF4"
+        android:id="@+id/realtive_Search">
+
+        <RelativeLayout
+
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_Search_icon">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/search_icon"
+                android:layout_centerInParent="true"
+                android:src="@drawable/search"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/relative_Search_icon"
+            android:singleLine="true"
+            android:paddingRight="10dp"
+            android:hint="Search for Restaurants and Cuisine"
+            android:layout_toLeftOf="@+id/relative_cross_icon"
+            android:background="@null"
+            android:id="@+id/header_Search"
+            android:textColor="#686767"
+            android:textColorHint="#a7a7a7" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:id="@+id/relative_cross_icon">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/img_cross_icon"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cross"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null">
+    </ListView>
+
+</LinearLayout>
+
+</FrameLayout>

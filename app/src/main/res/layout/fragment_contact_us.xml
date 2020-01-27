@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.food_ordering_app.fragment.ContactUs">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_issue"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:text="What seems to be the issue?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@drawable/gradient_text">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:entries="@array/spiinr_val"
+                android:background="@null"/>
+
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:id="@+id/img_spinner"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dropdown_icon"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient_text">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Text .."
+                android:id="@+id/edt_text"
+                android:gravity="start"
+                android:maxLines = "20"
+                android:scrollbars = "vertical"
+                android:padding="5dp"
+                android:textColorHint="#afafaf"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/_btn_ok_contact"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Ok"
+                android:textColor="@drawable/text_color_selector"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_selector" />
+
+            <Button
+                android:id="@+id/btn_cancel_contact"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/button_selector" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

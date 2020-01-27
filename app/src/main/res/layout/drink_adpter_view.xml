@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_layout_whole_drink">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/txt_view_drink"/>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_lay_drink_price"
+   android:layout_alignParentRight="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/txt_view_drink_price"/>
+</RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/rel_lay_drink_price">
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/rel_img_add_icon_dialog_drink">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_add_icon_drink"
+            android:background="@drawable/plus_qty"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/txt_txt_view"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/rel_img_add_icon_dialog_drink"
+        android:layout_alignBottom="@+id/rel_img_add_icon_dialog">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:id="@+id/txt_view_qty_count_drink"
+            android:gravity="center"
+            android:textColor="@color/colorLightBlack"
+            android:text="1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:id="@+id/rel_img_minus_icon_dialog"
+        android:layout_centerInParent="true"
+        android:layout_alignBottom="@+id/rel_img_add_icon_dialog"
+        android:layout_toLeftOf="@+id/txt_txt_view">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_less_icon_drink"
+            android:background="@drawable/minus_qty"
+            />
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

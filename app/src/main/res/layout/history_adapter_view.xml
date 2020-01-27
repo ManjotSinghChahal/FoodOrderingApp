@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_order"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_his"
+            android:id="@+id/liner_order_his"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/restaurant_name_OrderHis"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#595959"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/product_name_OrderHis"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#595959"
+            android:textSize="16sp"
+            android:layout_below="@+id/txt_order_his"
+            android:layout_alignParentLeft="true" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/img_OrderHis"
+            android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/liner_order_his"
+        android:layout_marginLeft="10dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/date_OrderHis" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/time_OrderHis"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/date_OrderHis"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/amount_OrderHis"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#d1cfcf"
+        android:layout_below="@+id/rel_order"/>
+
+
+</RelativeLayout>

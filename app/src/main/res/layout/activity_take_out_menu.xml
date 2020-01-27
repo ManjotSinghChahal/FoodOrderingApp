@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="app.com.food_ordering_app.activities.TakeOut_Menu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:id="@+id/tool_menu_Takeout_screen"
+        android:text="Halal Restaurant"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@color/color_toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:id="@+id/rel_back_takeOut_menu">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back_arrow"
+            android:id="@+id/img_bcakArrow"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tool_menu_Takeout_screen">
+
+
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/simple_rel_abv"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rel_details"
+        android:layout_below="@+id/tool_menu_Takeout_screen"
+        tools:ignore="NotSibling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/txt_change_delivery"
+            android:gravity="center_vertical"
+            android:id="@+id/rel_resturnt_name">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/image_food"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/food_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_toRightOf="@+id/image_food"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/txt_resturnt_name"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/txt_change_delivery"
+            android:layout_below="@+id/rel_resturnt_name"
+            android:id="@+id/rel_resturnt_loc">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="20dp"
+                android:id="@+id/loc_img"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/loction_icon"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/loc_img"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/txt_resturnt_loc"
+                android:singleLine="true"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="Change to Delivery"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="2dp"
+            android:id="@+id/txt_change_delivery"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/border_org_square"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcdcd"
+        android:layout_margin="5dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/rel_details"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_takeOut"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:layout_below="@+id/view"
+        android:text="@string/takeOut"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_delivery_price"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#6c6c6c"
+        android:textSize="12sp"
+        android:layout_below="@+id/txt_takeOut"
+        android:text="@string/delivery_details"/>
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview_takeout"
+        android:fillViewport="true"
+        android:layout_below="@+id/simple_rel_abv"
+        android:layout_above="@+id/cart_rel_takeout_menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:text="Most Popular"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:id="@+id/txt_most_polpular"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp" />
+      <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="28dp"
+          android:id="@+id/tv_item_total_mstPopular"
+          android:layout_alignBaseline="@+id/txt_most_polpular"
+          android:textColor="#000"
+          android:textSize="18sp"
+          android:layout_marginRight="14dp"
+          android:layout_alignParentRight="true"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_popular_takeOut"
+        android:divider="#bebdbd"
+        android:dividerHeight="1dp"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/txt_most_polpular"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_listview_menuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txt_most_polpular"
+                android:layout_alignStart="@+id/txt_most_polpular"
+                android:layout_below="@+id/list_popular_takeOut">
+
+                <ListView
+                    android:id="@+id/list_menu_takeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/border_menu"
+                    android:divider="#bebdbd"
+                    android:dividerHeight="1dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/cart_rel_takeout_menu"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/checkcart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:id="@+id/title_menu_screen"
+        android:text="Menu"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@color/color_toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:id="@+id/rel_back_menu">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back_arrow"
+            android:id="@+id/img_bcakArrow"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F0EFF4"
+        android:layout_below="@+id/rel_back_menu"
+        android:id="@+id/realtive_Search">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:background="@null"
+            android:id="@+id/edt_search"
+            android:textColor="#686767"
+            android:textColorHint="#a7a7a7"
+            android:hint="Search for a Food"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/search_icon"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/edt_search"
+            android:layout_centerInParent="true"
+            android:src="@drawable/search"/>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rel_layout_cross_menu"
+            android:visibility="gone"
+            android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cross"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridview_menu"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/realtive_Search"
+        android:layout_above="@+id/rel_takeout_checkout_cart_menu"
+        android:numColumns="2">
+
+    </GridView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/rel_takeout_checkout_cart_menu"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/checkcart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

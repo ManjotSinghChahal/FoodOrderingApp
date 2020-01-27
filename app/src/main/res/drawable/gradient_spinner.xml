@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+
+        <shape>
+        <gradient android:angle="90" android:endColor="#f2f2f2" android:startColor="#f2f2f2" android:type="linear" />
+
+        <stroke android:width="1dp" android:color="#fff" />
+
+        <corners android:radius="8dp" />
+
+        <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+    </shape></item>
+   <!-- <item><layer-list>
+        <item><shape>
+            <gradient android:angle="90" android:endColor="#B3BBCC" android:startColor="#E8EBEF" android:type="linear" />
+
+            <stroke android:width="1dp" android:color="#000000" />
+
+            <corners android:radius="4dp" />
+
+            <padding android:bottom="3dp" android:left="3dp" android:right="3dp" android:top="3dp" />
+        </shape></item>
+       &lt;!&ndash; <item >
+            <bitmap android:gravity="bottom|right" android:src="@drawable/spinner_arrow" />
+        </item>&ndash;&gt;
+    </layer-list></item>
+-->
+   <!-- <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient
+                        android:startColor="@color/colorAccent"
+                        android:endColor="@color/colorAccent"
+                        android:angle="270" />
+                    <stroke
+                        android:width="1dp"
+                        android:color="@color/colorAccent" />
+                    <corners
+                        android:radius="100dp" />
+                    <padding
+                        android:left="3dp"
+                        android:top="3dp"
+                        android:right="3dp"
+                        android:bottom="3dp" />
+                </shape>
+            </item>
+            &lt;!&ndash;<item
+                android:top="12dp"
+                android:right="15dp">
+                <bitmap android:src="@drawable/spn_arrow"
+                    android:gravity="top|right" />
+            </item>&ndash;&gt;
+        </layer-list>
+    </item>-->
+
+</selector>

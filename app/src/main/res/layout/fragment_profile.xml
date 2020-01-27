@@ -1,0 +1,663 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.food_ordering_app.fragment.Profile">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/id_profile_top_layout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleView"
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/nameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/imageView"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edit_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:editable="false"
+                            android:ems="10"
+                            android:focusedByDefault="false"
+                            android:hint="First Name:"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="5dp"
+                            android:textColor="#6b6b6b"
+                            android:textColorHint="#6b6b6b" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/LnameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/imageView"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edit_LName"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:editable="false"
+                            android:ems="10"
+                            android:focusedByDefault="false"
+                            android:hint="Last Name:"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="5dp"
+                            android:textColor="#6b6b6b"
+                            android:textColorHint="#6b6b6b" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/email_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/imageView"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:editable="false"
+                            android:ems="10"
+                            android:focusedByDefault="false"
+                            android:hint="Email:"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="5dp"
+                            android:textColor="#6b6b6b"
+                            android:textColorHint="#6b6b6b" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mobile_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/imageView"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="5dp">
+
+                        <EditText
+                            android:id="@+id/edit_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp"
+                            android:editable="false"
+                            android:ems="10"
+                            android:focusedByDefault="false"
+                            android:hint="Mobile No:"
+                            android:inputType="number"
+                            android:paddingLeft="5dp"
+                            android:textColor="#6b6b6b"
+                            android:textColorHint="#6b6b6b"  />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_below="@+id/imageView">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Address:"
+                                android:textSize="15dp"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/edt_street"/>
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/city_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/imageView"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="7dp"
+                                tools:ignore="DuplicateIds">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/edt_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:textSize="15dp"
+                                    android:focusedByDefault="false"
+                                    android:hint="City:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_below="@+id/city_Layout">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Province:"
+                                    android:textSize="15dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginTop="5dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:id="@+id/edt_province"/>
+
+                            </LinearLayout>
+
+<!--
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/province_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/edt_province"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:focusedByDefault="false"
+                                    android:hint="Province:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/postal_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:id="@+id/edt_postal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:textSize="15dp"
+                                    android:inputType="textPostalAddress"
+                                    android:focusedByDefault="false"
+                                    android:hint="Postal Code:"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <!--<fragment
+                                android:id="@+id/place_autocomplete_fragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                                />-->
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Country:"
+                                android:layout_marginTop="4dp"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b"
+                                android:textSize="15dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/txt_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp" />
+                                <!--    android:drawableRight="@drawable/arrow"-->
+                                <Spinner
+                                    android:id="@+id/spinner_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp">
+
+                                </Spinner>
+                            </RelativeLayout>
+
+
+
+                            <!-- android:text="@string/city"-->
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <android.support.design.widget.TextInputLayout
+            android:id="@+id/addr_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp">
+
+            <EditText
+                android:id="@+id/addr_edit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:textColorHint="#6b6b6b"
+                android:editable="false"
+                android:text="@string/addr"
+                android:focusedByDefault="false"
+                android:hint="Address:"
+                android:textColor="#6b6b6b"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="5dp" />
+        </android.support.design.widget.TextInputLayout>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:text="Home Address:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/address_corners"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+
+                            android:orientation="vertical">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/street_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/imageView"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:id="@+id/edt_street1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:focusedByDefault="false"
+                                    android:hint="Street:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+                            <!-- android:text="@string/street"-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Country:"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b"
+                                android:textSize="11dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/txt_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp" />
+                                <!--    android:drawableRight="@drawable/arrow"-->
+                                <Spinner
+                                    android:id="@+id/spinner_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"></Spinner>
+                            </RelativeLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/city_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/imageView"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/edt_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:focusedByDefault="false"
+                                    android:hint="City:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+                            <!-- android:text="@string/city"-->
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Postal Code:"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/edt_postal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:editable="false"
+                                android:ems="10"
+                                android:focusedByDefault="false"
+                                android:hint="Postal Code:"
+                                android:inputType="textPostalAddress"
+                                android:paddingLeft="5dp"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:text="Work Address:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:background="@drawable/address_corners"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/street_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/imageView"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:id="@+id/edt_street_work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:focusedByDefault="false"
+                                    android:hint="Street:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+                            <!-- android:text="@string/street_work"-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Country:"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b"
+                                android:textSize="11dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/spinner_country_work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"></Spinner>
+
+                                <TextView
+                                    android:id="@+id/txt_spinner_work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp" />
+                                <!-- android:drawableRight="@drawable/arrow"-->
+                            </RelativeLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/cit_Layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/imageView"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp"
+                                tools:ignore="DuplicateIds">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/edit_city_work"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+                                    android:editable="false"
+                                    android:ems="10"
+                                    android:focusedByDefault="false"
+                                    android:hint="City:"
+                                    android:inputType="textPostalAddress"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#6b6b6b"
+                                    android:textColorHint="#6b6b6b" />
+                            </android.support.design.widget.TextInputLayout>
+                            <!--  android:text="@string/city_work"-->
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Postal Code:"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/edit_postal_work"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="4dp"
+                                android:editable="false"
+                                android:ems="10"
+                                android:focusedByDefault="false"
+                                android:hint="Postal Code:"
+                                android:inputType="textPostalAddress"
+                                android:paddingLeft="5dp"
+                                android:textColor="#6b6b6b"
+                                android:textColorHint="#6b6b6b" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linr_pass"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_selector"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/text_color_selector"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

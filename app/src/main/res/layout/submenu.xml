@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="item types"
+        android:id="@+id/item_submenu1"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@color/color_toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tool_menu"
+        android:id="@+id/rel_back_takeOut_menu">
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back_arrow"
+            android:id="@+id/img_bcakArrow_item"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_submenu"
+       android:layout_below="@+id/item_submenu1"
+        android:divider="#bebdbd"
+        android:layout_margin="5dp"
+        android:dividerHeight="1dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_rel_datails"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+        <include
+            layout="@layout/checkcart"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
